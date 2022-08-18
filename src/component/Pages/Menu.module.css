@@ -1,0 +1,12 @@
+.menu{
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+   
+}
+
+
+.menu h3{
+    color: white;
+    font-size: 3rem;
+}
