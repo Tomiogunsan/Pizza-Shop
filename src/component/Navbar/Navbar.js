@@ -46,7 +46,7 @@ const Navbar = (props) => {
             <div className={classes.container}>
                 <img src={logo} alt={"A logo"}></img> 
             </div>
-            <nav className={classes.navbar}>
+            <nav className={classes.navbar} onClick={handleToggleIcon} >
                 <ul className= {`${classes.menu} ${isToggle}`} >
                     {data.map((item, key) =>(<li className={classes.list} key={key}>
                         <Link  className={(navData) => navData.isActive ? classes.active: " "}to={item.to}>
