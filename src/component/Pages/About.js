@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./About.module.css";
 
+
 const About = () => {
  return(
     <section>
@@ -17,7 +18,11 @@ const About = () => {
         </div>
         </div>
         </div>
+
+     
     </section>
+
+    
  )
 }
 

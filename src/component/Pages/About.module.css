@@ -24,7 +24,7 @@
 
 .about h2{
     color: white;
-    text-transform: uppercase;
+    text-transform:capitalize;
     font-size: 3.5rem;
 }
 
@@ -37,6 +37,7 @@
     margin: 1rem 0;
     line-height: 1.9rem;
     font-size: 1.6rem;
+    background: rgba(0,0,0,.4);
 }
 
 

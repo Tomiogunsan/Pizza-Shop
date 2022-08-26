@@ -1,0 +1,34 @@
+.cart{
+    color: black;
+    font-size: 2rem;
+}
+
+
+
+.badge{
+    border: var(--border);
+    background-color: var(--brown-theme-main-color);
+    padding: 0.25rem 1rem;
+    border-radius: 25px;
+    margin-left: .5rem;
+    font-weight: bold;
+}
+
+.button{
+    display: flex;
+    background: #fff;
+    color:black;
+    padding: 0.5rem 2rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    
+    
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: var(--brown-theme-main-color);
+}

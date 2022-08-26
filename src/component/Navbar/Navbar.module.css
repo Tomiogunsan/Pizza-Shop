@@ -117,4 +117,9 @@ button:hover{
         
         z-index: 15;
     }
+
+    .icons{
+        display: flex;
+        align-items: center;
+    }
 }

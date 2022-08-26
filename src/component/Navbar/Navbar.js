@@ -2,8 +2,11 @@ import React , {useState} from 'react';
 import classes from "./Navbar.module.css";
 import {Link} from "react-router-dom";
 import logo from "../../images/logo3.jpg";
-import { FaShoppingCart , FaTimes} from "react-icons/fa";
+import { FaTimes} from "react-icons/fa";
 import {FiMenu} from 'react-icons/fi';
+import CartButton from '../CartButton/CartButton';
+import Cart from '../../Cart/Cart';
+import { useSelector } from 'react-redux';
 
 const data = [
     {
@@ -18,10 +21,7 @@ const data = [
         label: "Menu",
         to: "/menu",
     },
-    {
-        label: "Reviews",
-        to: "/reviews",
-    },
+   
     {
         label: "Contact",
         to: "/contact",
@@ -29,14 +29,16 @@ const data = [
 ];
 
 
-const Navbar = () => {
+const Navbar = (props) => {
     const [toggleIcon, setToggleIcon] = useState(false);
 
     const handleToggleIcon = () => {
         setToggleIcon(!toggleIcon);
     }
 
-    const isToggle = toggleIcon ? classes.active : ''
+    const isToggle = toggleIcon ? classes.active : '';
+
+    const showCart = useSelector((state) => state.ui.cartIsVisible);
     return(
         <div className={classes.header}>
             
@@ -57,17 +59,14 @@ const Navbar = () => {
                      </nav>
                     
                      <div className={classes.icons}>
-                     <button className={classes.button}>
-                        <FaShoppingCart className={classes.cart}/>
-                        <div className={classes.badge}>3</div>
-                     </button>
+                     <CartButton  onShow ={props.onClick}/>
                 <div className={classes.bar} onClick={handleToggleIcon}>
               { toggleIcon ? <FaTimes style={{color: "black"}} size={30} />  :<FiMenu  size={30}/>}
             </div>
             </div> 
             
 
-            
+          {showCart &&  <Cart />}
 
         </div>
     )
