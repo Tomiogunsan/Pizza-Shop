@@ -51,7 +51,7 @@
 }
 
 .btn{
-   
+    font-weight: 700;
     font-size: 1.7rem;
     color:#fff;
     background: var(--brown-theme-main-color);
