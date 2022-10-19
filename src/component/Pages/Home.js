@@ -18,7 +18,7 @@ return(
                  and anytime on the go</p>
               
                <div>
-                <button className={classes.btn}> <Link to="/menu">Order now</Link></button>
+              <Link to="/menu"><button className={classes.btn}>Order now</button></Link>
                 </div>
                 </div>
                  </div>
