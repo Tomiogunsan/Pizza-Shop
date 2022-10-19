@@ -51,12 +51,12 @@
 }
 
 .btn{
-    margin-top: 1rem;
+   
     font-size: 1.7rem;
     color:#fff;
     background: var(--brown-theme-main-color);
-    padding: 1rem 3rem;
-    margin-left: 2rem;
+    padding: 2rem;
+    
 }
 
 
