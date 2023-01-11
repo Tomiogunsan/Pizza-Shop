@@ -1,0 +1,9 @@
+.container{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 10rem;
+    width: 100%;
+}
+

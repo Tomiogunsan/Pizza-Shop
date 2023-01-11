@@ -1,14 +1,14 @@
 .container{
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+   
     gap: 1rem;
     padding: 10rem;
     width: 100%;
 }
 
 @media (max-width: 640px){
-    .container{
-     grid-template-columns: repeat(1, minmax(0,1fr))
-    } 
- }
+   .container{
+    grid-template-columns: repeat(1, minmax(0,1fr))
+   } 
+}

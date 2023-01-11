@@ -7,8 +7,6 @@
     width: 100%;
 }
 
-@media (max-width: 640px){
-    .container{
-     grid-template-columns: repeat(1, minmax(0,1fr))
-    } 
- }
+@media screen ({
+    
+}

@@ -9,7 +9,7 @@
     /* Fixing the header to the top of the page. */
    /* Fixing the header to the top of the page. */
     position: fixed;
-    /* top:0; left:0; right:0; */
+    top:0; left:0; right:0;
     z-index: 1000;
     background-color: var(--brown-theme-main-color);
 }
