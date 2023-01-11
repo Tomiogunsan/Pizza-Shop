@@ -3,15 +3,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    padding-top: 38px;
-    height: 80px;
+    padding-top: 28px;
+    height: 40px;
     width: 100%;
     /* Fixing the header to the top of the page. */
-   /* Fixing the header to the top of the page. */
-    position: fixed;
+    /* position: fixed; */
     /* top:0; left:0; right:0; */
     z-index: 1000;
-    background-color: var(--brown-theme-main-color);
 }
 
 .container img{
@@ -38,7 +36,7 @@
 }
 
 a:active, a:hover{
-    color: #010101;
+    color: var(--brown-theme-main-color);
     border-bottom: .1rem solid #fff;
 }
 
