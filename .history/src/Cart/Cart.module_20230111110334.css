@@ -9,7 +9,7 @@
 
 .cart-items{
     max-height: 20rem;
-    overflow:  scroll;
+    overflow: scroll;
     list-style: none;
 }
 
